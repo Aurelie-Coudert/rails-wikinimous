@@ -2,7 +2,7 @@
 
 <ul style="list-style-type: none;">
   <% @articles.each do |article| %>
-    <li>
+    <li> <i class="fa-brands fa-square-pied-piper"></i>
     <%= link_to article.title, article_path(article) %>
     <%= link_to article_path(article.id), data: {turbo_method: :delete, turbo_confirm: "Delete #{article.title}?"} do %>
           <i class="fa-regular fa-trash-can"></i>
